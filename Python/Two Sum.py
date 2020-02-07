@@ -3,6 +3,7 @@
 # Given nums = [2, 7, 11, 15], target = 9, return [0, 1].
 
 # Two for loops
+# time complexity: O(n^2)
 #class Solution:
 #    def twoSum(self, nums: List[int], target: int) -> List[int]:
 #        res = {}
@@ -33,6 +34,8 @@
 #        return result
 
 # Map
+# time complexity: O(n)
+# space complexity: O(n)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         res = {}
