@@ -11,6 +11,21 @@
 # horizontal scanning
 # time complexity: O(S), S is the sum of all characters in all strings
 # space complexity : O(1), we only used constant extra space.
+#class Solution:
+#    def longestCommonPrefix(self, strs: List[str]) -> str:
+#        if len(strs) == 0:
+#            return ''
+#        prefix = strs[0]
+#        print(prefix)
+#        for s in strs:
+#            # The find() method finds the first occurrence of the specified value.
+#            # The find() method returns -1 if the value is not found.
+#            while s.find(prefix) != 0:
+#                prefix = prefix[0:len(prefix) - 1]
+#                print(prefix)
+#            if(prefix == ""):
+#                return ""
+#        return prefix
 
 # vertical scanning
 # In the worst case there will be n equal strings with length m and the algorithm performs S = m * n character comparisons.
@@ -18,7 +33,6 @@
 # In the best case there are at most n * minLen comparisons where minLen is the length of the shortest string in the array.
 # time complexity : O(S), S is the sum of all characters in all strings
 # space complexity : O(1), we only used constant extra space.
-
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if len(strs) == 0:
